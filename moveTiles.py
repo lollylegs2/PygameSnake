@@ -34,10 +34,10 @@ while running == True:
     running = listen_for_quit()
     screen.fill(screenColor)
     key = pygame.key.get_pressed()
-    snake.updateSnake(key, screen)
+
     # draw to screen the heading and list/array
     draw_screen(tile, gridWidth, titleText, textRectangle, screen)
-
+    snake.updateSnake(key, screen)
     pygame.display.flip()
 
 
