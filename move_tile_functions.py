@@ -9,11 +9,9 @@ class image_record:
     def __init__(self, x_arg, y_arg):
         self.x = x_arg
         self.y = y_arg
-        self.random = random.randrange(100)
-        if self.random < 50:
-            self.image = pygame.image.load('green_tile.png')
-        else:
-            self.image = pygame.image.load('yellow_tile.png')
+        self.image = pygame.image.load('green_tile.png')
+
+
 #=========================END Record definition for image record=============================###
 #=========================END Record definition for image record=============================###
 
@@ -37,7 +35,7 @@ def listen_for_quit():
 def make_title(screen):
     # Initialise the text object and associated text rectangle that will hold the heading
     font = pygame.font.Font(None, 36)
-    local_title_text = font.render("MT's Project Move Tiles", 1, (200, 0, 0))
+    local_title_text = font.render("Leo's Project Move Tiles", 1, (200, 0, 0))
     local_text_rectangle = local_title_text.get_rect()
     local_text_rectangle.centerx = screen.get_rect().centerx
     local_text_rectangle.centery = 30
